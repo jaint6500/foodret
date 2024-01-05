@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .custom {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(0%, -50%);
+      }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="home.css" />
+  </head>
+  <body>
+    <!-- Navbar  -->
+
+    <div class="superNav border-bottom py-2 bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 centerOnMobile">
+            <span
+              class="d-none d-lg-inline-block d-md-inline-block d-sm-inline-block d-xs-none me-3"
+              ><strong>info@somedomain.com</strong></span
+            >
+            <span class="me-3"
+              ><i class="fa-solid fa-phone me-1 text-warning"></i>
+              <strong>1-800-123-1234</strong></span
+            >
+          </div>
+          <div
+            class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-none d-lg-block d-md-block-d-sm-block d-xs-none text-end"
+          >
+            <span class="me-3"
+              ><i class="fa-solid fa-truck text-muted me-1"></i>Open hours:
+              Monday - Sunday 8:00AM - 9:00PM</span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <nav
+      class="navbar navbar-expand-lg bg-white sticky-top navbar-light p-3 shadow-sm"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="#"
+          ><i class="fa-solid fa-shop me-2"></i> <strong>FELICIANO</strong></a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="mx-auto my-3 d-lg-none d-sm-block d-xs-block">
+          <div class="input-group">
+            <span class="border-warning input-group-text bg-warning text-white"
+              ><i class="fa-solid fa-magnifying-glass"></i
+            ></span>
+            <input
+              type="text"
+              class="form-control border-warning"
+              style="color: #7a7a7a"
+            />
+            <button class="btn btn-warning text-white">Search</button>
+          </div>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <div class="ms-auto d-none d-lg-block">
+            <div class="input-group">
+              <span
+                class="border-warning input-group-text bg-warning text-white"
+                ><i class="fa-solid fa-magnifying-glass"></i
+              ></span>
+              <input
+                type="text"
+                class="form-control border-warning"
+                style="color: #7a7a7a"
+              />
+              <button class="btn btn-warning text-white">Search</button>
+            </div>
+          </div>
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a
+                class="nav-link mx-2 text-uppercase active"
+                aria-current="page"
+                href="#"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-2 text-uppercase" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-2 text-uppercase" href="#">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-2 text-uppercase" href="#">Stories</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-2 text-uppercase" href="#">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Image Carousel [banner area] starts here -->
+
+    <div
+      id="carouselExampleDark"
+      class="carousel carousel-dark slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide-to="3"
+          aria-label="Slide 4"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active my-img-1" data-bs-interval="10000">
+          <!-- <img src="bg-image-banner-1.jpg" class="d-block w-100 pic-size" alt="..."> -->
+          <div class="carousel-caption custom d-md-block">
+            <h5 class="hd1 hd2">Feliciano</h5>
+            <h5 class="hd1">BEST RESTAURANT</h5>
+          </div>
+        </div>
+        <div class="carousel-item my-img-2" data-bs-interval="2000">
+          <!-- <img src="bg-image-banner-2.jpg" class="d-block w-100 pic-size" alt="..."> -->
+          <div class="carousel-caption custom d-md-block">
+            <h5 class="hd1 hd2">Feliciano</h5>
+            <h5 class="hd1">NUTRITIOUS FOOD</h5>
+          </div>
+        </div>
+        <div class="carousel-item my-img-3">
+          <!-- <img src="bg-image-banner-3.jpg" class="d-block w-100 pic-size" alt="..."> -->
+          <div class="carousel-caption custom d-md-block">
+            <h5 class="hd1 hd2">Feliciano</h5>
+            <h5 class="hd1">HEALTHY FOOD ITEMS</h5>
+          </div>
+        </div>
+
+        <div class="carousel-item my-img-4">
+          <!-- <img src="bg-image-banner-4.jpg" class="d-block w-100 pic-size" alt="..."> -->
+          <div class="carousel-caption custom d-md-block">
+            <h5 class="hd1 hd2">Feliciano</h5>
+            <h5 class="hd1">EXOTIC DISHES</h5>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleDark"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleDark"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- Dishes -->
+
+    <div class="container text-center mt-5">
+      <div class="row align-items-start">
+        <div class="col-lg-3 col-md-3 col-sm-6 col-12">
+          <img class="food-pic" src="food-plate-1.jpg" alt="" />
+          <h5>Grilled Toast</h5>
+          <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6 col-12">
+          <img class="food-pic" src="food-plate-2.jpg" alt="" />
+          <h5>Potato Curry</h5>
+          <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6 col-12">
+          <img class="food-pic" src="food-plate-3.jpg" alt="" />
+          <h5>Protein Salad</h5>
+          <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6 col-12">
+          <img class="food-pic" src="food-plate-4.jpg" alt="" />
+          <h5>Fenugreek Base</h5>
+          <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- About us 1-->
+     <div class="container m-5">
+        <div class="row">
+          <div class="col-lg-6 col-md-auto col-sm-12 col-12 d-flex mx-auto">
+            <img
+              class="pic"
+              src="jonathan-borba-uB7q7aipU2o-unsplash.jpg"
+              alt=""
+            />
+            <img
+              class="pic1"
+              src="louis-hansel-v3OlBE6-fhU-unsplash.jpg"
+              alt=""
+            />
+          </div>
+          <div class="col-lg-6 col-md-auto col-sm-12 col-12 mt-3 ml-3">
+            <h1 class="s4">Feliciano Restaurant</h1>
+            <br />
+            <p class="para">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore
+              quod tenetur numquam? Dolorem, incidunt! Veritatis, maxime ut est
+              iusto nisi voluptates, nulla quae dolorum sapiente temporibus
+              voluptatem, vitae eveniet inventore. <br /><br />
+              Mon - Fri <span><b>8 AM - 10 PM</b></span>
+            </p>
+            <p class="fsize fset text-warning">+1-875-642-190</p>
+          </div>
+        </div>
+      </div>
+    </div> 
+
+    <!--About us 2  -->
+
+    <div class="container">
+        <div class="row border border-danger d-flex">
+            <div class="col-8 ">box-1</div>
+            <div class="col-4">box-2</div>
+        </div>
+    </div>
+
+    <!-- <div class="container-fluid m-5"> -->
+      <div class="container">
+          <div class="row">
+              <div class="col mx-1 ">
+               <p class="fsize text-warning">18</p>
+               <p>YEARS OF EXPERIENCE</p>
+              </div>
+              <div class="col mx-1 ">
+               <p class="fsize text-warning">100</p>
+               <p>MENUS/DISH</p>
+              </div>
+              <div class="col mx-1 ">
+               <p class="fsize text-warning">50</p>
+               <p>STAFFS</p>
+              </div>
+              <div class="col mx-1 ">
+               <p class="fsize text-warning">15,000</p>
+               <p>HAPPY CUSTOMERS</p>
+              </div>
+              <div class="col mx-1 ">
+               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur, ad? sit amet consectetur adipisicing elit. Aspernat.</p>
+              </div>
+          </div>
+      </div>
+   </div>
+  </body>
+</html>
