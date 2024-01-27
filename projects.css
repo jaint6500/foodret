@@ -1,0 +1,188 @@
+#bgColr{
+   padding: 20px;
+   margin-bottom: 30px;
+   text-align: center;
+   border: none;
+   background: linear-gradient(to bottom, rgb(255, 120, 2), rgba(120, 120, 120, 0.883)) ;
+   color: rgb(255, 255, 255);
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   font-size: 20px;
+}
+
+
+.cont-1 {
+    height: 50vh;
+
+    padding-top: 10%;
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(
+      to bottom right,
+      rgba(0, 0, 44, 0.934),
+      rgb(0, 0, 0),
+      rgb(36, 0, 40)
+    );
+    color: white;
+    font-size: 70px;
+  }
+
+  .btn {
+    padding: 8px;
+  }        /* stopwatch ends here */
+
+ /* ------------------------------- *** ------------------------------ */
+
+  .cont-2{
+    margin-top: 50px;
+    margin-left: 5%;
+    width: 40%;
+    height: 30rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(to left top, grey, rgb(37, 37, 37), black );
+ }
+
+ .cal{
+    margin-left: 1.3rem;
+    padding-top: 1.3rem;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 30px;
+    letter-spacing: 5px;
+ }
+
+ #inp{
+    margin-left: 1.3rem;
+    margin-right: 1.3rem;
+    width: 90%;
+    height: 3rem;
+    font-size: 20px;
+ }
+
+ .r-1{
+    margin-left: 1.3rem;
+    margin-top: 20px;
+    text-align: left;
+ }
+
+ .b1{
+    padding: 15px 20px;
+    margin: 1px 10px;
+    border: solid;
+    border-radius: 100%;
+    border-color: rgba(101, 101, 101, 0.864);
+    box-shadow: 5px 2px 15px grey;
+    background: none;
+    color: blanchedalmond;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+ }
+
+ .b1:hover{
+    background: white;
+    color: rgb(255, 4, 4);
+    cursor: pointer;
+ }  /* Calculator ends here */
+
+ .big-container{
+   display: flex;
+   height: 30rem;
+   margin-top: 3rem;
+   padding-bottom: 5rem;
+   
+ }
+
+ /*  ********************-***********************  */
+
+ .cont-3{
+   width: 40%;
+   height:30rem;
+   margin-top: 50px;
+   margin-left: 10%;
+   border: 1px solid green;
+   background: linear-gradient(to right bottom, rgba(0, 16, 14, 0.772), rgba(43, 43, 43, 0.871), rgb(150, 255, 236));
+ }
+
+ .srch{
+   width:60%;
+   height: 3rem;
+   margin-left: 10%;
+   margin-top: 5%;
+   margin-right: 4%;
+   border-radius: 30px;
+   border: none;
+   text-align: center;
+ }
+
+ .icon{
+   margin: 12px;
+   border: none;
+   border-radius: 30px;
+   font-size: 20px;
+ }
+
+ .content-box{
+   text-align: center;
+ }
+
+ .icon-1{
+  margin-top: 1.8rem;
+  color:bisque;
+  font-size: 120px;
+ }
+
+ .temp{
+   color: white;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   font-weight: bold;
+ }
+
+ .temp_1{
+   color: white;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   font-weight: bold;
+ }
+
+ .weather-info{
+   display: flex;
+ }
+
+ .wi_1{
+   margin-left: 70px;
+   padding: 20px 30px;
+   border-radius: 25px;
+   background: white;
+   font-size: 18px;
+   font-weight: bold;
+   color: rgb(0, 123, 131);
+   box-shadow: 4px 5px 12px rgb(40, 40, 40);
+ }
+
+ .wi_2{
+   margin-left: 70px;
+   padding: 20px 25px;
+   border-radius: 25px;
+   background: white;
+   font-size: 18px;
+   font-weight: bold;
+   color: rgb(0, 123, 131);
+   box-shadow: 4px 5px 12px rgb(40, 40, 40);
+ }
+
+ .icon-3{
+   color: black;
+   margin-right: 0.8rem;
+ }
+
+ 
+
+
+  
+
+
+
+  

@@ -3,16 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Feliciano - A food Website</title>
 
-    <style>
-      .custom {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(0%, -50%);
-      }
-    </style>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -27,11 +19,13 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
     <link rel="stylesheet" href="home.css" />
+    <link rel="shortcut icon" href="Images/food-service4537.jpg" type="image/jpg">
+    
   </head>
   <body>
     <!-- Navbar  -->
 
-    <div class="superNav border-bottom py-2 bg-light">
+    <div class="superNav border-bottom py-2 ">
       <div class="container">
         <div class="row">
           <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 centerOnMobile">
@@ -112,16 +106,16 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link mx-2 text-uppercase" href="#">About</a>
+              <a class="nav-link mx-2 text-uppercase" href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link mx-2 text-uppercase" href="#">Menu</a>
+              <a class="nav-link mx-2 text-uppercase" href="#menu">Menu</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link mx-2 text-uppercase" href="#">Stories</a>
+              <a class="nav-link mx-2 text-uppercase" href="#book">BOOK A TABLE</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link mx-2 text-uppercase" href="#">Contact Us</a>
+              <a class="nav-link mx-2 text-uppercase" href="#contact">Contact Us</a>
             </li>
           </ul>
         </div>
@@ -219,22 +213,22 @@
     <div class="container text-center mt-5">
       <div class="row align-items-start">
         <div class="col-lg-3 col-md-3 col-sm-6 col-12">
-          <img class="food-pic" src="food-plate-1.jpg" alt="" />
+          <img class="food-pic" src="Images/food-plate-1.jpg" alt="" />
           <h5>Grilled Toast</h5>
           <p>Lorem ipsum dolor sit amet.</p>
         </div>
         <div class="col-lg-3 col-md-3 col-sm-6 col-12">
-          <img class="food-pic" src="food-plate-2.jpg" alt="" />
+          <img class="food-pic" src="Images/food-plate-2.jpg" alt="" />
           <h5>Potato Curry</h5>
           <p>Lorem ipsum dolor sit amet.</p>
         </div>
         <div class="col-lg-3 col-md-3 col-sm-6 col-12">
-          <img class="food-pic" src="food-plate-3.jpg" alt="" />
+          <img class="food-pic" src="Images/food-plate-3.jpg" alt="" />
           <h5>Protein Salad</h5>
           <p>Lorem ipsum dolor sit amet.</p>
         </div>
         <div class="col-lg-3 col-md-3 col-sm-6 col-12">
-          <img class="food-pic" src="food-plate-4.jpg" alt="" />
+          <img class="food-pic" src="Images/food-plate-4.jpg" alt="" />
           <h5>Fenugreek Base</h5>
           <p>Lorem ipsum dolor sit amet.</p>
         </div>
@@ -242,21 +236,22 @@
     </div>
 
     <!-- About us 1-->
-     <div class="container m-5">
+     <div class="container m-5" id="about">
         <div class="row">
           <div class="col-lg-6 col-md-auto col-sm-12 col-12 d-flex mx-auto">
             <img
               class="pic"
-              src="jonathan-borba-uB7q7aipU2o-unsplash.jpg"
+              src="Images/jonathan-borba-uB7q7aipU2o-unsplash.jpg"
               alt=""
             />
             <img
               class="pic1"
-              src="louis-hansel-v3OlBE6-fhU-unsplash.jpg"
+              src="Images/louis-hansel-v3OlBE6-fhU-unsplash.jpg"
               alt=""
             />
           </div>
           <div class="col-lg-6 col-md-auto col-sm-12 col-12 mt-3 ml-3">
+            <h1 class="s8">about</h1>
             <h1 class="s4">Feliciano Restaurant</h1>
             <br />
             <p class="para">
@@ -275,36 +270,385 @@
     <!--About us 2  -->
 
     <div class="container">
-        <div class="row border border-danger d-flex">
-            <div class="col-8 ">box-1</div>
-            <div class="col-4">box-2</div>
+        <div class="row  d-flex justify-content-center">
+            <div class="col-8 ">
+              <div class="row  m-2 text-center">
+                <div class="col-lg-3 col-md-6 col-12 ">
+                  <span class="fsize text-secondary num" data-val="18">00</span>
+                  <p>YEARS OF EXPERIENCE</p>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12 ">
+                  <span class="fsize text-secondary num" data-val="100">00</span>
+                  <p>MENUS/DISH</p>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12 ">
+                  <span class="fsize text-secondary num" data-val="50">00</span>
+                  <p>STAFFS</p>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                  <span class="fsize text-secondary num"  data-val="15">00</span><span class="fsize text-secondary thousand">k</span>
+                  <p>HAPPY CUSTOMERS</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12 justify-content-center text-center mt-3">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores sed, odit similique cupiditate officia cum voluptatem fugiat.</p>
+            </div>
         </div>
     </div>
+    <script>
+    let valueDisplays = document.querySelectorAll(".num");
+    let interval = 50;
 
-    <!-- <div class="container-fluid m-5"> -->
-      <div class="container">
-          <div class="row">
-              <div class="col mx-1 ">
-               <p class="fsize text-warning">18</p>
-               <p>YEARS OF EXPERIENCE</p>
-              </div>
-              <div class="col mx-1 ">
-               <p class="fsize text-warning">100</p>
-               <p>MENUS/DISH</p>
-              </div>
-              <div class="col mx-1 ">
-               <p class="fsize text-warning">50</p>
-               <p>STAFFS</p>
-              </div>
-              <div class="col mx-1 ">
-               <p class="fsize text-warning">15,000</p>
-               <p>HAPPY CUSTOMERS</p>
-              </div>
-              <div class="col mx-1 ">
-               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur, ad? sit amet consectetur adipisicing elit. Aspernat.</p>
-              </div>
+    valueDisplays.forEach((valueDisplay) => {
+    let startvalue = 0;
+    let endvalue = parseInt(valueDisplay.getAttribute("data-val"));
+    let counter = setInterval(function () {
+    startvalue += 1;
+    valueDisplay.textContent = startvalue;
+    if (startvalue == endvalue) {
+      clearInterval(counter);
+    }
+  }, interval);
+}); 
+</script> 
+
+    <!-- Our Services Starts here -->
+
+    <div class="container-fluid bg-warning my-5 py-5">
+    <div class="container">
+      <h1 class="s6 pt-3">Services</h1>
+      <h1 class="s5">Catering Services</h1>
+        <div class="row">
+          <div class="col-lg-4 col-md-4 col-sm-12">
+             <div class="card m-1">
+               <img src="Images/811494_birthday_cake_celebration_food_party_icon.png" alt="" class="set">
+               <h5 class="text-center">Birthday Cake</h5>
+               <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi magnam beatae perferendis labore animi accusantium, pariatur eum vel repellendus molestiae?</p>
+             </div>
           </div>
+          <div class="col-lg-4 col-md-4 col-sm-12">
+            <div class="card m-1">
+              <img src="Images/4230560_business_discussion_meeting_icon (1).png" alt="" class="set">
+              <h5 class="text-center">Business Discussion</h5>
+              <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi magnam beatae perferendis labore animi accusantium, pariatur eum vel repellendus molestiae?</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-12">
+            <div class="card m-1">
+              <img src="Images/3250807_happiness_letter_love_marriage_party_icon.png" alt="" class="set">
+              <h5 class="text-center">Wedding Party</h5>
+              <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi magnam beatae perferendis labore animi accusantium, pariatur eum vel repellendus molestiae?</p>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+
+  <!-- Image Gallery -->
+
+  <div class="container my-2" id="menu">
+    <h1 class="s7 pt-3">Specialities</h1>
+      <h1 class="s5">Our Menu</h1>
+    <!-- row 1 -->
+    <div class="row">
+      <div class="col-lg-6 col-md-12 col-sm-12">
+        <div class="row">
+          <div class="col-lg-6 col-md-6 py-3">
+            <img
+              src="Images/Menu-food-item-1.jpg"
+              alt=""
+              width="100%"
+              height="100%"
+            />
+          </div>
+          <div class="col-lg-6 col-md-6 py-3">
+            <h3 class="fw-bold pt-5">Rich Protein Salad</h3>
+            <p>Grilled Broccoli, onions, blue-berries and Walnuts.</p>
+            <button class="menu-btn" type="button">Order Now</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-12 col-sm-12">
+        <div class="row">
+          <div class="col-lg-6 col-md-6 py-3">
+            <img
+              src="Images/Menu-food-item-2.jpg"
+              alt=""
+              width="100%"
+              height="100%"
+            />
+          </div>
+          <div class="col-lg-6 col-md-6 py-3">
+            <h3 class="fw-bold pt-5">Italian Pesto</h3>
+            <p>Veg Cheese pasta with ginger garnish .</p>
+            <button class="menu-btn" type="button">Order Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- row 2 -->
+
+    <div class="row">
+      <div class="col-lg-6 col-md-12 col-sm-12">
+        <div class="row flex-container">
+          <div class="col-lg-6 col-md-6 py-3">
+            <h3 class="fw-bold pt-5">Pistachio Curry</h3>
+            <p>Tomatoes, pistachio based healthy curry.</p>
+            <button class="menu-btn" type="button">Order Now</button>
+          </div>
+          <div class="col-lg-6 col-md-6 py-3">
+            <img
+              src="Images/Menu-food-item-4.jpg"
+              alt=""
+              width="100%"
+              height="100%"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-12 col-sm-12">
+        <div class="row flex-container">
+          <div class="col-lg-6 col-md-6 py-3">
+            <h3 class="fw-bold pt-5">New Mexican Dish</h3>
+            <p>Made with noodles and some vegetables .</p>
+            <button class="menu-btn" type="button">Order Now</button>
+          </div>
+
+          <div class="col-lg-6 col-md-6 py-3">
+            <img
+              src="Images/Menu-food-item-3.jpg"
+              alt=""
+              width="100%"
+              height="100%"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- row 3 -->
+    <div class="row py-3">
+      <div class="col-lg-6 col-md-12 col-sm-12">
+        <div class="row">
+          <div class="col-lg-6 col-md-6 py-3">
+            <img
+              src="Images/Menu-food-item-5.jpg"
+              alt=""
+              width="100%"
+              height="100%"
+            />
+          </div>
+          <div class="col-lg-6 col-md-6 py-3">
+            <h3 class="fw-bold pt-5">Dosa with Coconut Chutney</h3>
+            <p>Broccoli, corriander leaves, Coconut with juice.</p>
+            <button class="menu-btn" type="button">Order Now</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-12 col-sm-12">
+        <div class="row">
+          <div class="col-lg-6 col-md-6 py-3">
+            <img
+              src="Images/Menu-food-item-6.jpg"
+              alt=""
+              width="100%"
+              height="100%"
+            />
+          </div>
+          <div class="col-lg-6 col-md-6 py-3">
+            <h3 class="fw-bold pt-5">Aaloo Chaat</h3>
+            <p>Potatoes with bread base chaat.</p>
+            <button class="menu-btn" type="button">Order Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Restaurant chefs -->
+
+  <div class="container-fluid py-5">
+    <h1 class="s7 pt-3">Chef</h1>
+      <h1 class="s5">Our Master Chefs</h1>
+     <div class="row mx-5">
+         <div class="col-lg-3 col-md-3 col-sm-6 col-12 text-center pt-5 pb-5">
+          
+          <img src="Images/bluebird-provisions-lRAWcT7uwhY-unsplash.jpg" alt="" height="90%" width="90%">
+          <h5 class="text-center pt-3">John Smooth</h5>
+          <p class="text-center">Assistant Chef</p>
+         </div>
+         <div class="col-lg-3 col-md-3 col-sm-6 col-12 text-center pt-5 pb-5">
+          <img src="Images/febrian-zakaria-SiQgni-cqFg-unsplash.jpg" alt="" height="90%" width="90%">
+          <h5 class="text-center pt-3">Daniel Joy</h5>
+          <p class="text-center">Chef</p>
+         </div>
+         <div class="col-lg-3 col-md-3 col-sm-6 col-12 text-center pt-5 pb-5">
+          <img src="Images/sebastian-coman-photography-eBmyH7oO5wY-unsplash.jpg" alt="" height="90%" width="90%">
+          <h5 class="text-center pt-3">Michel William</h5>
+          <p class="text-center">Head Chef</p>
+         </div>
+         <div class="col-lg-3 col-md-3 col-sm-6 col-12 text-center pt-5 pb-5">
+          <img src="Images/vince-fleming-7qileFwJEWo-unsplash.jpg" alt="" height="90%" width="90%">
+          <h5 class="text-center pt-3">Luke Smith</h5>
+          <p class="text-center">Professional Chef</p>
+         </div>
+     </div>
+  </div>
+
+  <!-- Background Attach -->
+
+  <div class="container-fluid fix-bg py-5" id="book">
+    <div class="row f1">
+      <div class="col-lg-12 col-md-12 col-sm-12 mx-5 fix-bg-1 pb-5">
+        <h1 class="s7 pl-5">Book a Table</h1>
+        <h1 class="s5 pl-5">Make a Reservation</h1>
+        <form class="mx-5 pb-5">
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+              <label class="pb-3">Name</label>
+              <br />
+              <input type="text" placeholder="Name" />
+              <br /><br />
+              <label class="pb-3">Email</label>
+              <br />
+              <input type="text" placeholder="Email" />
+              <br /><br />
+              <label class="pb-3">Phone</label>
+              <br />
+              <input type="number" placeholder="Phone" />
+              <br />
+            </div>
+
+            <div class="col-lg-6 col-md-6 col-sm-12">
+              <label class="pb-3">Time</label>
+              <br />
+              <input type="number" placeholder="Time" />
+              <br /><br />
+              <label class="pb-3">No. of Person</label>
+              <br />
+              <input type="number" placeholder="No. of Person" />
+              <br /><br />
+              <label class="pb-3">Date</label>
+              <br />
+              <input type="text" placeholder="Date" />
+              <br /><br />
+            </div>
+          </div>
+          <button type="button" class="book-table-btn">
+            Make a Reservation
+          </button>
+        </form>
+        <!-- <button type="button" book-table-btn">Make a Reservation</button> -->
+      </div>
+    </div>
+  </div>
+   
+     <!-- Recent Posts -->
+
+     <div class="container-fluid mb-5 pb-5 bg-warning">
+      <h1 class="s6 pt-3">Services</h1>
+      <h1 class="s5">Catering Services</h1>
+      <div class="row mx-5 pb-5">
+          <div class="col-lg-4 col-md-4 col-sm-12 pt-2 pb-5">
+           
+           <img class="text-center" src="Images/oleksandr-gamaniuk-iWmC-38Q6Hk-unsplash.jpg" alt="" height="90%" width="90%">
+           <p class="pt-3 S3">Sept. 6, 2019 Admin</p>
+           <h5 class="fw-bold ">Taste the Delicious of food of India</h5>
+           <a href="#" class="text-center a1 pb-5" >Read More</a>
+           
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-12 pt-2 pb-5">
+           <img class="text-center" src="Images/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="" height="90%" width="90%">
+           <p class="pt-3 S3">Sept. 6, 2019 Admin</p>
+           <h5 class="fw-bold">Taste the Delicious of food of India</h5>
+           <a href="#" class="text-center a1 pb-5" >Read More</a>
+
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-12 pt-2 pb-5">
+           <img class="text-center" src="Images/oleksandr-gamaniuk-iWmC-38Q6Hk-unsplash.jpg" alt="" height="90%" width="90%">
+           <p class="pt-3 S3">Sept. 6, 2019 Admin</p>
+           <h5 class="fw-bold">Taste the Delicious of food of India</h5>
+           <a href="#" class="text-center a1 pb-5" >Read More</a>
+
+          </div>
+          
       </div>
    </div>
+
+
+   
+
+    <!-- footer starts -->
+    <footer>
+      <div class="container-fluid mt-5 bg-dark p-5" id="contact" >
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-6 col-12 mt-3 mr-3">
+              <h4 class="content con-hd">Feliciano</h4>
+              <br>
+              <p class="content">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus
+                animi aspernatur assumenda quia ullam vel, officia, temporibus
+                ad.
+              </p>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-12 mt-3 mr-3">
+              <h4 class="content con-hd">Open Hours</h4>
+              <br>
+              <table class="content" style="width:100%">
+                <tbody>
+                  <tr>
+                    <td>Monday</td>
+                    <td>6:00-7:00</td>
+                  </tr>
+                  <tr>
+                    <td>Tuesday</td>
+                    <td>7:00-8:00</td>
+                  </tr>
+                  <tr>
+                    <td>Wednesday</td>
+                    <td>8:00-9:00</td>
+                  </tr>
+                  <tr>
+                    <td>Thursday</td>
+                    <td>9:00-10:00</td>
+                  </tr>
+                  <tr>
+                    <td>Friday</td>
+                    <td>1:00-2:00</td>
+                  </tr>
+                  <tr>
+                    <td>Saturday</td>
+                    <td>2:00-3:00</td>
+                  </tr>
+                  <tr>
+                    <td>Sunday</td>
+                    <td>3:00-4:00</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-12 mt-3 mr-3">
+              <h4 class="content con-hd">Instagram</h4>
+              <br>
+              <img src="Images/oleksandr-gamaniuk-iWmC-38Q6Hk-unsplash.jpg" alt="" height="220px" width="260px">
+            </div>     
+            <div class="col-lg-3 col-md-6 col-sm-6 col-12 mt-3 mr-3">
+              <h4 class="content con-hd">Newsletter</h4>
+              <br>
+              <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni tempore harum debitis deleniti, dolorem voluptate?</p>
+              <input class="s1" type="text" placeholder="Enter Your Email">
+              <br><br>
+              <button class="s1 s2">Subscribe</button>
+            </div>
+             <div class="row text-center">
+               <p class="content pt-4">Copyright <span>&#169;</span>2024 All right reserved | This template is made with <span>&#9829;</span> by colorlib</p>
+             </div>
+        </div>
+      </div>
+    </footer>
+
   </body>
 </html>

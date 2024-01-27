@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script> -->
+    <script
+      src="https://kit.fontawesome.com/804e17cb47.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="projects.css" />
+  </head>
+  <body>
+    <div style="text-align: center">
+      <button id="bgColr" type="button" onclick="change()">
+        See different Colors by clicking
+      </button>
+    </div>
+
+    <script>
+      let btn = document.querySelector(".bgColr");
+      let colors = [
+        "Red",
+        "blue",
+        "pink",
+        "orange",
+        "grey",
+        "violet",
+        "navy - blue",
+        "black",
+      ];
+
+      function change() {
+        const randomnumber = getRandomNumber();
+        document.body.style.backgroundColor = colors[randomnumber];
+
+        function getRandomNumber() {
+          return Math.floor(Math.random() * colors.length);
+        }
+      }
+    </script>
+
+    <div class="container cont-1">
+      <div id="displaytime">00:00:00</div>
+      <button type="button">
+        <img class="btn" src="stop-solid.svg" alt="" onclick="watchstop()" />
+      </button>
+      <button type="button">
+        <img class="btn" src="play-solid.svg" alt="" onclick="watchstart()" />
+      </button>
+      <button type="button">
+        <img
+          class="btn"
+          src="recycle-solid.svg"
+          alt=""
+          onclick="watchreset()"
+        />
+      </button>
+    </div>
+
+    <script>
+      let [seconds, minutes, hours] = [0, 0, 0];
+      document.getElementById("displaytime").innerHTML; // location from there, where changes or time is to show
+      let timer; // make variable of name "timer" then create a function watch()
+      function watch() {
+        seconds++;
+        if (seconds == 60) {
+          seconds = 0;
+          minutes++;
+          if (minutes == 60) {
+            minutes = 0;
+            hours++;
+          }
+        }
+
+        let h = hours < 10 ? "0" + hours : hours;
+        let m = minutes < 10 ? "0" + minutes : minutes;
+        let s = seconds < 10 ? "0" + seconds : seconds;
+
+        displaytime.innerHTML = h + ":" + m + ":" + s; // this is used for update time
+      }
+
+      function watchstart() {
+        if (timer !== null) {
+          clearInterval(timer);
+        }
+        timer = setInterval(watch, 100);
+      }
+
+      function watchstop() {
+        clearInterval(timer);
+      }
+
+      function watchreset() {
+        clearInterval(timer);
+        [seconds, minutes, hours] = [0, 0, 0];
+        displaytime.innerHTML = "00:00:00";
+      }
+    </script>
+
+    <!-- Calculator  -->
+    <div class="big-container">
+      <div class="container cont-2">
+        <h3 class="cal">CALCULATOR</h3>
+        <div class="row">
+          <input id="inp" type="text" />
+          <div class="row r-1 r-margn">
+            <button class="b1">+</button>
+            <button class="b1">-</button>
+            <button class="b1">*</button>
+            <button class="b1">/</button>
+            <button class="b1">0</button>
+          </div>
+          <div class="row r-1">
+            <button class="b1">7</button>
+            <button class="b1">8</button>
+            <button class="b1">9</button>
+            <button class="b1">.</button>
+            <button class="b1">00</button>
+          </div>
+          <div class="row r-1">
+            <button class="b1">4</button>
+            <button class="b1">5</button>
+            <button class="b1">6</button>
+            <button class="b1">=</button>
+            <button class="b1">DEL</button>
+          </div>
+          <div class="row r-1">
+            <button class="b1">1</button>
+            <button class="b1">2</button>
+            <button class="b1">3</button>
+            <button class="b1">%</button>
+            <button class="b1">AC</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Weather Forecast -->
+
+      <div class="container cont-3">
+        <div class="card">
+          <div class="search">
+            <input class="srch" type="text" placeholder="Enter your location" />
+            <button><i class="fa-solid fa-magnifying-glass icon"></i></button>
+          </div>
+          <div class="content-box">
+            <i class="fa-solid fa-cloud-sun-rain icon-1"></i>
+            <h1 class="temp"></h1>
+            <h2 class="temp_1"></h2>
+            <div class="weather-info">
+              <div class="wi_1">
+                <i class="fa-solid fa-water icon-3"></i>
+                <span>64%</span>
+                <p><span>Humidity</span></p>
+              </div>
+              <div class="wi_2">
+                <i class="fa-solid fa-wind icon-3"></i>
+                <span>18km/h</span>
+                <p><span>Wind Speed</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      let lon;
+      let lat;
+      let temperature = document.querySelector(".temp");
+      let loc = document.querySelector(".temp_1");
+      const kelvin = 273;
+
+      window.addEventListener("load", () => {
+        if (navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition((position) => {
+            console.log(position);
+            lon = position.coords.longitude;
+            lat = position.coords.latitude;
+
+            const api = "0805c51c24077143a312764a3740bfe8";
+            const cityname = "Delhi";
+
+            const base = `https://api.openweathermap.org/data/2.5/weather?q={Delhi}&appid={0805c51c24077143a312764a3740bfe8}`;
+
+            fetch(base)
+              .then((response) => {
+                return response.json();
+              })
+
+              .then(data);
+            console.log(data);
+            temperature.textContent =
+              Math.floor(data.main.temp - kelvin) + "°C";
+            loc.textContent = data.name;
+          });
+        }
+      });
+    </script>
+
+    <script>
+      let input = document.getElementById("inp");
+      let buttons = document.querySelectorAll(".b1");
+
+      let string = "";
+      let arr = Array.from(buttons);
+      arr.forEach((b1) => {
+        b1.addEventListener("click", (e) => {
+          if (e.target.innerHTML == "=") {
+            string = eval(string);
+            input.value = string;
+          } else if (e.target.innerHTML == "AC") {
+            string = "";
+            input.value = string;
+          } else {
+            e.target;
+            string = string + e.target.innerHTML;
+            input.value = string;
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
