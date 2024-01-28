@@ -334,7 +334,8 @@ a{
 
    @media (max-width: 480px) {
     .f1 {
-      width: 85%;
+      width: 90%;
+      align-items: center;
    }
 }
 /* Background Attach end */
