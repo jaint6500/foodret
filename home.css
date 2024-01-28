@@ -247,16 +247,6 @@
     transform: translate(0%, -50%);
 }
 
-@media(min-width: 920px){
-    .hd1{
-        font-size: 2.5rem;
-    }
-
-    .hd2{
-        font-size: 2.5rem; 
-    }
-}
-
 .hd1{
     color: white;
     font-size: 3.5rem;
@@ -266,7 +256,19 @@
     font-family: 'Parisienne', cursive;
     font-size: 4rem;
     color: rgb(255, 216, 86);
-    } /* banner area end */
+    } 
+
+@media(max-width: 440px){
+    .hd1{
+        font-size: 2.5rem;
+    }
+
+    .hd2{
+        font-size: 2.5rem; 
+    }
+}
+
+/* banner area end */
 
 /* Navbar style */
 
